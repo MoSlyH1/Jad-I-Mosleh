@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#100822" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Jad Imad Mosleh</title>
+  <meta name="description" content="Jad Imad Mosleh — Passionate engineer with a foundation in cyber security, application development, web development, and AI. Beirut, Lebanon." />
+  <meta property="og:title" content="Jad Imad Mosleh" />
+  <meta property="og:description" content="Passionate engineer with a foundation in cyber security, application development, web development, and AI." />
+  <meta property="og:image" content="/assets/img/jad-portrait.jpg" />
+  <link rel="icon" type="image/png" href="/assets/img/jam-emblem.png" />
+  <link rel="apple-touch-icon" href="/assets/img/jam-emblem.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <!-- Background -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg__orb bg__orb--1"></div>
+    <div class="bg__orb bg__orb--2"></div>
+    <div class="bg__orb bg__orb--3"></div>
+    <div class="bg__grid"></div>
+    <canvas class="bg__stars" id="stars"></canvas>
+    <div class="bg__grain"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#top" aria-label="Jad Imad Mosleh — home">
+      <img src="/assets/img/jam-emblem.png" alt="" width="34" height="34" />
+      <span>Jad Imad Mosleh</span>
+    </a>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span>
+    </button>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#websites">Websites</a>
+      <a href="#projects">Projects</a>
+      <a href="#writing">Writing</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="nav__cta">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__photo reveal">
+        <div class="hero__ring"></div>
+        <img src="/assets/img/jad-portrait.jpg" alt="Portrait of Jad Imad Mosleh" width="347" height="347" />
+      </div>
+      <div class="hero__text">
+        <p class="eyebrow reveal"><span class="dot"></span>Beirut, Lebanon</p>
+        <h1 class="hero__name reveal">Jad Imad <em>Mosleh</em></h1>
+        <p class="hero__role reveal">Computer and Communication Engineering &middot; American University of Beirut (AUB)</p>
+        <p class="hero__lead reveal">Passionate engineer with a foundation in cyber security, application development, web development, and AI. Ability to find solutions and answers to complex tasks within my field of expertise. I Enjoy writing as a means to express myself.</p>
+        <div class="hero__actions reveal">
+          <a class="btn btn--primary" href="/assets/files/Jad_Imad_Mosleh_CV.docx" download>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 21h14"/></svg>
+            Download CV
+          </a>
+          <a class="btn btn--ghost" href="#contact">Get in touch</a>
+        </div>
+        <ul class="socials reveal" aria-label="Links">
+          <li><a href="mailto:jadd.mosleh@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg></a></li>
+          <li><a href="tel:+96176330961" aria-label="Phone"><svg viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 005 5L15 12l5 2v4a2 2 0 01-2 2A16 16 0 013 5a2 2 0 012-2z"/></svg></a></li>
+          <li><a href="https://www.linkedin.com/in/jad-mosleh-b190b82bb/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4 9h3v11H4zM5.5 4a1.75 1.75 0 110 3.5 1.75 1.75 0 010-3.5zM10 9h3v1.6c.5-.9 1.7-1.8 3.4-1.8 3.2 0 3.6 2.1 3.6 4.8V20h-3v-5.6c0-1.4 0-3-1.9-3s-2.1 1.4-2.1 2.9V20h-3z" class="fill"/></svg></a></li>
+          <li><a href="https://github.com/Mosle7h" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path class="fill" d="M12 2a10 10 0 00-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.7.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 015 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0012 2z"/></svg></a></li>
+          <li><a href="https://tryhackme.com/p/jadd7748" target="_blank" rel="noopener" aria-label="TryHackMe"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <header class="section__head reveal">
+        <span class="section__index">01</span>
+        <h2>About <em>me</em></h2>
+      </header>
+      <div class="about">
+        <figure class="about__photo reveal">
+          <img src="/assets/img/jad-formal.jpg" alt="Jad Imad Mosleh in a suit" width="451" height="413" loading="lazy" />
+        </figure>
+        <div class="about__text glass reveal">
+          <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+          <p>I am a computer scientist who spends most of his time wondering about the complexities of life. Trying to enjoy the many prosperities that life is providing. Working toward a better goal of engaging more in human contact and fundamentally striving for a better future. I want to contribute to all types of fields of humanity. From science, to culture, to writing, to development... And become what people see as a role model who can make a change all in all. 1% a day is the bare minimum, but through out the year it can make a great impact. And that is what I call a brighter outcome. It may sound childish, but I am writing to keep it as a reminder to stay look at the light at the end of the tunnel.</p>
+          <p class="about__sign">&mdash; Jad Imad Mosleh</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <header class="section__head reveal">
+        <span class="section__index">02</span>
+        <h2>Experience</h2>
+      </header>
+      <ol class="timeline">
+        <li class="timeline__item reveal">
+          <div class="timeline__meta">
+            <span class="timeline__date">March 2026 &ndash; present</span>
+          </div>
+          <div class="timeline__card glass">
+            <h3>Abela Delice</h3>
+            <ul class="bullets">
+              <li>Using Odoo an ARP system to help in IT activities such as accounting and reports</li>
+              <li>Building apps and websites such as company employee and document management systems, Food tracking app for secondary company BerryLite, and salary calculator for employees</li>
+              <li>Track company data by including gas consumption logs and food recipes. And building Fuel and gas tracking website</li>
+            </ul>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__meta">
+            <span class="timeline__date">Jan 2026 &ndash; Feb 2026</span>
+          </div>
+          <div class="timeline__card glass">
+            <h3>Trifid Media</h3>
+            <p class="timeline__role">Meeting Setter</p>
+          </div>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__meta">
+            <span class="timeline__date">Jun 2024 &ndash; Aug 2024</span>
+            <span class="tag">Internship</span>
+          </div>
+          <div class="timeline__card glass">
+            <h3>AM Bank</h3>
+            <p class="timeline__role">Online Banking System Development</p>
+            <ul class="bullets">
+              <li>Created an AI-powered chatbot to assist users with online banking queries</li>
+              <li>Developed a balance sheet transaction system tracking debits and credits</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Websites -->
+    <section class="section" id="websites">
+      <header class="section__head reveal">
+        <span class="section__index">03</span>
+        <h2>My <em>websites</em></h2>
+      </header>
+      <div class="sites">
+        <a class="site glass reveal" href="https://fuel-transport-lebanon.vercel.app" target="_blank" rel="noopener">
+          <div class="site__logo site__logo--square"><img src="/assets/img/logo-fuel.png" alt="Fuel &amp; Transport logo" width="46" height="50" loading="lazy" /></div>
+          <h3>Fuel &amp; Transport</h3>
+          <p>Official IPT fuel prices in Lebanon and the fuel-indexed daily transportation rate, month by month.</p>
+          <span class="site__url">fuel-transport-lebanon.vercel.app <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        </a>
+        <a class="site glass reveal" href="https://ai-assistant-ai68.vercel.app" target="_blank" rel="noopener">
+          <div class="site__logo site__logo--wide"><img src="/assets/img/logo-nimbus.png" alt="Nimbus logo" width="151" height="29" loading="lazy" /></div>
+          <h3>Nimbus</h3>
+          <p>Chat, tasks, notes, schedule and clock in one place.</p>
+          <span class="site__url">ai-assistant-ai68.vercel.app <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        </a>
+        <a class="site glass reveal" href="https://lebanese-salary-calculator-1.onrender.com" target="_blank" rel="noopener">
+          <div class="site__logo site__logo--square"><img src="/assets/img/logo-cedar.png" alt="Lebanese Salary Calculator logo" width="46" height="61" loading="lazy" /></div>
+          <h3>Lebanese Salary Calculator</h3>
+          <p>Salary calculator for employees.</p>
+          <span class="site__url">lebanese-salary-calculator-1.onrender.com <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <header class="section__head reveal">
+        <span class="section__index">04</span>
+        <h2>Projects</h2>
+      </header>
+      <p class="section__intro reveal">Built multiple games such as&hellip;</p>
+      <div class="cards">
+        <article class="card glass reveal">
+          <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7l4 3-1.5 4.5h-5L8 10z"/></svg></span>
+          <h3>Flappy World Cup</h3>
+          <p>A game where a player gets to flap away as a football player</p>
+        </article>
+        <article class="card glass reveal">
+          <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h7v12H4zM13 6h7v12h-7z"/></svg></span>
+          <h3>A would you rather game</h3>
+          <p>Allowing users to choose from two types of Lebanese situations</p>
+        </article>
+        <article class="card glass reveal">
+          <span class="card__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg></span>
+          <h3>A dating site</h3>
+          <p>That limits user to go on a date with his/her loved one...</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Writing -->
+    <section class="section" id="writing">
+      <header class="section__head reveal">
+        <span class="section__index">05</span>
+        <h2>Writing</h2>
+      </header>
+      <p class="section__intro reveal">Wrote three unpublished books and an article: 15 minutes chats, chatting as long as possible, 24 Chats of power: Are simple English books about the different conversations that occur through life. Lebanese-Crisis is an Arabic article about the struggles of Lebanese from 2019 till today.</p>
+      <div class="books">
+        <article class="book reveal">
+          <div class="book__cover">
+            <span class="book__author">JAD</span>
+            <h3>The 15-Minute Chats</h3>
+            <span class="book__rule">&mdash; &middot; &mdash;</span>
+            <span class="book__sub">eighty-six small conversations about everyday life</span>
+            <span class="book__place">Beirut, Lebanon</span>
+          </div>
+          <div class="book__body">
+            <blockquote>&ldquo;If there&rsquo;s one thing I care about more than most, it&rsquo;s putting a smile on someone&rsquo;s face, especially in the most unexpected, most awkward, most oddly specific situations.&rdquo;</blockquote>
+            <a class="link" href="/assets/files/The_15-Minute_Chats.pdf" target="_blank" rel="noopener">Read the book <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+          </div>
+        </article>
+        <article class="book reveal">
+          <div class="book__cover book__cover--alt">
+            <span class="book__author">JAD</span>
+            <h3>Chatting as Long as Possible</h3>
+            <span class="book__tagline">Till You Get Bored</span>
+            <span class="book__rule">&mdash; &middot; &mdash;</span>
+            <span class="book__sub">forty-four long conversations about everyday life</span>
+            <span class="book__place">Beirut, Lebanon</span>
+          </div>
+          <div class="book__body">
+            <blockquote>&ldquo;Ordinary people talking to each other is still one of the most interesting things in the world.&rdquo;</blockquote>
+            <a class="link" href="/assets/files/Chatting_as_Long_as_Possible.pdf" target="_blank" rel="noopener">Read the book <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+          </div>
+        </article>
+        <article class="book reveal">
+          <div class="book__cover book__cover--dim">
+            <span class="book__author">JAD</span>
+            <h3>24 Chats of Power</h3>
+            <span class="book__rule">&mdash; &middot; &mdash;</span>
+            <span class="book__place">Beirut, Lebanon</span>
+          </div>
+          <div class="book__body">
+            <span class="tag">Unpublished</span>
+          </div>
+        </article>
+        <article class="book reveal">
+          <div class="book__cover book__cover--article">
+            <span class="book__author">ARTICLE</span>
+            <h3>Lebanese-Crisis</h3>
+            <span class="book__rule">&mdash; &middot; &mdash;</span>
+            <span class="book__sub">An Arabic article about the struggles of Lebanese from 2019 till today.</span>
+          </div>
+          <div class="book__body">
+            <span class="tag">Arabic</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Education, Organizations, Training -->
+    <section class="section" id="education">
+      <header class="section__head reveal">
+        <span class="section__index">06</span>
+        <h2>Education &amp; <em>beyond</em></h2>
+      </header>
+
+      <div class="edu glass reveal">
+        <div class="edu__badge">AUB</div>
+        <div>
+          <h3>American University of Beirut (AUB)</h3>
+          <p>Bachelor Degree in Computer and Communication Engineering</p>
+        </div>
+      </div>
+
+      <div class="split">
+        <div class="reveal">
+          <h3 class="subhead">Organizations and clubs</h3>
+          <div class="stack">
+            <article class="mini glass">
+              <div class="mini__top">
+                <h4>Tryhackme</h4>
+                <span class="mini__date">Aug 2026 &ndash; present</span>
+              </div>
+              <p>Top 15% tryhackme user with a hacker level rank</p>
+              <a class="link" href="https://tryhackme.com/p/jadd7748" target="_blank" rel="noopener">tryhackme.com/p/jadd7748 <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+            </article>
+            <article class="mini glass">
+              <div class="mini__top">
+                <h4>Toast Masters</h4>
+                <span class="mini__date">2023 &ndash; 2024</span>
+              </div>
+              <p>Gave speeches and increased club membership by 27%</p>
+            </article>
+          </div>
+        </div>
+        <div class="reveal">
+          <h3 class="subhead">Training</h3>
+          <div class="stack">
+            <article class="mini glass">
+              <div class="mini__top">
+                <h4>Al Mawared</h4>
+                <span class="mini__date">Jun 2021 &ndash; Aug 2022</span>
+              </div>
+              <ul class="bullets">
+                <li>Credit Department: Analyzed customer credit scores for loan approvals (Jun &ndash; Aug 2022)</li>
+                <li>Purchasing Department: Managed maintenance and utilities purchases within budget (Jun &ndash; Jul 2021)</li>
+              </ul>
+            </article>
+            <article class="mini glass">
+              <div class="mini__top">
+                <h4>Virgin Megastore</h4>
+                <span class="mini__date">Jun &ndash; Aug 2018</span>
+              </div>
+              <ul class="bullets">
+                <li>Sales associate in multimedia department; increased daily sales by 20%</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <header class="section__head reveal">
+        <span class="section__index">07</span>
+        <h2>Skills</h2>
+      </header>
+      <div class="skills glass reveal">
+        <h3 class="subhead">Technical</h3>
+        <ul class="chips">
+          <li>Odoo</li><li>Python</li><li>Java</li><li>C++</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Django</li><li>Flutter</li><li>Android (Java)</li><li>Node.js</li><li>Express</li><li>PostgreSQL</li><li>Spring Boot</li><li>Docker</li><li>Git</li><li>Postman</li><li>REST APIs</li><li>Excel</li><li>Word</li><li>PowerPoint</li>
+        </ul>
+        <h3 class="subhead">Languages</h3>
+        <ul class="langs">
+          <li><span>English</span><em>fluent</em><i style="--w:92%"></i></li>
+          <li><span>Arabic</span><em>native</em><i style="--w:100%"></i></li>
+          <li><span>French</span><em>average</em><i style="--w:50%"></i></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <header class="section__head reveal">
+        <span class="section__index">08</span>
+        <h2>Contact</h2>
+      </header>
+      <div class="contact">
+        <div class="contact__info reveal">
+          <img class="contact__photo" src="/assets/img/jad-office.jpg" alt="Jad Imad Mosleh" width="271" height="271" loading="lazy" />
+          <ul class="contact__list">
+            <li><span>Email</span><a href="mailto:jadd.mosleh@gmail.com">jadd.mosleh@gmail.com</a></li>
+            <li><span>Phone</span><a href="tel:+96176330961">+96176330961</a></li>
+            <li><span>Location</span><p>Beirut, Lebanon</p></li>
+            <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/jad-mosleh-b190b82bb/" target="_blank" rel="noopener">in/jad-mosleh-b190b82bb</a></li>
+            <li><span>GitHub</span><a href="https://github.com/Mosle7h" target="_blank" rel="noopener">github.com/Mosle7h</a></li>
+          </ul>
+        </div>
+        <form class="form glass reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" maxlength="120" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" inputmode="email" maxlength="200" required />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" maxlength="4000" required></textarea>
+          </div>
+          <div class="hp" aria-hidden="true">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" tabindex="-1" autocomplete="off" />
+          </div>
+          <button class="btn btn--primary btn--full" type="submit">
+            <span class="btn__label">Send message</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m0 0l-6-6m6 6l-6 6"/></svg>
+          </button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img src="/assets/img/jam-emblem.png" alt="" width="64" height="64" loading="lazy" />
+    <p>Designed &amp; built by Jad Imad Mosleh</p>
+    <p class="footer__small">&copy; <span id="year">2026</span> Jad Imad Mosleh &middot; Beirut, Lebanon</p>
+  </footer>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

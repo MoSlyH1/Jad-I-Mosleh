@@ -1,0 +1,20 @@
+{
+  "name": "jad-mosleh-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal website of Jad Imad Mosleh",
+  "author": "Jad Imad Mosleh",
+  "license": "UNLICENSED",
+  "main": "local-server.js",
+  "scripts": {
+    "start": "node local-server.js",
+    "dev": "node --watch local-server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "pg": "^8.13.1"
+  }
+}
